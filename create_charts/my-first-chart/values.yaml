@@ -3,7 +3,12 @@
 # Declare variables to be passed into your templates.
 customblock:
   author:
-    name: {}
+    name: 
+      - "Edward"
+      - "Peter"
+      - "Mark"
+      - "Juan"
+      - "Camela"
 
 replicaCount: 3
 
