@@ -1,6 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{"Hi team, we are leaning - "}}, {{"HELM"}}
+  {{- .Values.customblock.author.name}}
+  {{- .Values.customblock.author.address}}
+
+  {{- "Values from Chart"}}
+  {{- .Chart.apiVersion}}
+  {{- .Chart.keywords}}
+  {{- .Chart.maintainers.email}}
+
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:
