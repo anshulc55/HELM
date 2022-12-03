@@ -3,10 +3,8 @@
 # Declare variables to be passed into your templates.
 customblock:
   author:
-    name: "Edward"
-    address: "Street 5, 248, New York"
-    email:
-
+    name: true
+    
 replicaCount: 3
 
 image:
