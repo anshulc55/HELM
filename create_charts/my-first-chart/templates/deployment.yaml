@@ -6,7 +6,7 @@ kind: Deployment
   {{- "Values from Chart"}}
   {{- .Chart.AppVersion}}
   {{- .Chart.Keywords}}
-  {{- .Chart.Maintainers.Email}}
+  {{- .Chart.Maintainers}}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
