@@ -4,9 +4,9 @@ kind: Deployment
   {{- .Values.customblock.author.address}}
 
   {{- "Values from Chart"}}
-  {{- .Chart.apiVersion}}
-  {{- .Chart.keywords}}
-  {{- .Chart.maintainers.email}}
+  {{- .Chart.ApiVersion}}
+  {{- .Chart.Keywords}}
+  {{- .Chart.Maintainers.Email}}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
