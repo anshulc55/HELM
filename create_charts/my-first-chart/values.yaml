@@ -6,7 +6,6 @@ customblock:
     name: "Edward"
     addresemails: "Street 5, 248, New York"
 
-
 replicaCount: 3
 
 image:
