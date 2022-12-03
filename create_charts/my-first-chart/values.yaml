@@ -4,7 +4,7 @@
 customblock:
   author:
     name: "Edward"
-    addresemails: "Street 5, 248, New York"
+    address: "Street 5, 248, New York"
 
 replicaCount: 3
 
