@@ -1,18 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
-# {{ $myVar := true }}
-# {{- if $myVar }}
-# {{"Hi, I am with Varaible True" | nindent 4 }}
-# {{- else }}
-# {{"Hi, I am with varaible False" | | nindent 4 }}
-# {{- end}}
-
 
 {{- with .Values.customblock.author.name}}
 author:
 {{- toYaml . | nindent 4 }}
-# {{- else}}
-# {{"Hi, I am without with Block." | nindent 4}}
 {{- end }}
 
 {{- range .Values.customblock.author.name}}
