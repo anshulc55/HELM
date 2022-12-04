@@ -12,7 +12,7 @@ author:
 {{- end }}
 
 images:
-{{- range $key,$value .Values.image}}
+{{- range $key,$value := .Values.image}}
   {{$key}}: {{$value}}
 {{- end }}
 
