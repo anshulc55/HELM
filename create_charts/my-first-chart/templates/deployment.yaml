@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 {{ $myVar := true }}
-{{- if $myVar }}
-{{"Hi, I am with Varaible True"}}
-{{- else }}
-{{"Hi, I am with varaible False"}}
-{{- end}}
 
+{{- if $myVar }}
+{{"Hi, I am with Varaible True" | nindent 4 }}
+{{- else }}
+{{"Hi, I am with varaible False" | nindent 4 }}
+{{- end }}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
