@@ -12,7 +12,6 @@ customblock:
       - "Julia"
 
 replicaCount: 3
-
 image:
   repository: nginx
   pullPolicy: IfNotPresent
@@ -89,3 +88,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+mysql :
+  enabled : false
