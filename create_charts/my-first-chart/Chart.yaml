@@ -30,3 +30,12 @@ version: 1.0.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.16.0"
+
+dependencies:
+  - name : mysql
+    version : "9.4.5"
+    repository : "https://charts.bitnami.com/bitnami"
+
+  - name : rabbitmq
+    version : "11.2.2"
+    repository : "https://charts.bitnami.com/bitnami"
