@@ -98,8 +98,6 @@ mysql :
   primary :
     service : 
       type : NodePort
-      ports:
-        - nodePort : 31025 
 
 rabbitmq :
   enabled : true
