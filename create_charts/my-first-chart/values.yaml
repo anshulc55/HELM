@@ -91,6 +91,15 @@ affinity: {}
 
 mysql :
   enabled : true
+  auth :
+    database : "my_custom_db"
+    username : "customowner"
+    password : "test12345"
+    primary :
+      service : 
+        type : NodePort
+        nodePorts:
+          - nodePort : 31025 
 
 rabbitmq :
-  enabled : false
+  enabled : true
