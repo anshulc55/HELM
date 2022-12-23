@@ -98,7 +98,7 @@ mysql :
     primary :
       service : 
         type : NodePort
-        nodePorts:
+        ports:
           - nodePort : 31025 
 
 rabbitmq :
