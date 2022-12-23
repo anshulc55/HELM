@@ -35,7 +35,10 @@ dependencies:
   - name : mysql
     version : "9.4.5"
     repository : "https://charts.bitnami.com/bitnami"
-    condition : mysql.enabled    
+    condition : mysql.enabled   
+    import-values :
+      - child : image
+        parent : mysql_image 
 
   - name : rabbitmq
     version : "11.2.2"
